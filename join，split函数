@@ -1,0 +1,9 @@
+open(IN, $file) or die $!; 
+my $content = join("", <IN>); 
+close IN;
+#perl中将列表用join函数转换为标量；
+
+#perl中将标量用split函数转换为数组；
+@chars=split(//,$word); 
+@words=split(//,$sentence);  
+@sentences=split(/\./,$paragraph);  
